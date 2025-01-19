@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  text-decoration: none;
+  list-style: none;
+}
+
+.hero {
+  height: 100vh;
+  background-color: rgb(240, 248, 248);
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight:  800;
+  color: blue;
+  cursor: pointer ;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a{
+  color: rgb(100, 89, 89);
+  position: relative;
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(22, 29, 233);
+}
+
+nav ul li a::after {
+  content: "" ;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s ease;
+}
+
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  color: white;
+  text-transform: uppercase;
+  background-color: blue;
+  padding: 10px 30px;
+  border-radius: 2em;
+  display: inline-block;
+  font-weight: 500;
+  transition: all .4s ease;
+  border: 2px solid rgb(15, 15, 239);
+}
+
+.btn:hover {
+  background: transparent;
+  color: blue;
+}
+
+.detail {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.detail h1 {
+  color: #1d1d24;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.detail h1 span {
+  color: blue;
+}
+
+.detail p {
+  color:#1d1d24;
+  font-size: 24px;
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.image img {
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+
+}
+
+.image {
+  width: 40%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+}
+
+.socials {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: 5em;
+  font-size: 28px;
+  color: antiquewhite;
+  padding: 10px 30px;
+
+}
+
+.socials i {
+  padding: 2px;
+  transition: 0.3s ease;
+}
+
+.socials i:hover {
+  color: blue;
+  background-color: white;
+  border-radius: 50%;
+}
